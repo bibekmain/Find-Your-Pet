@@ -1,0 +1,61 @@
+<section class="row container d-flex flex-wrap py-3 mb-4 justify-content-center">
+	<div id="searcharea" class="d-inline-flex flex-wrap justify-content-center">
+		<fieldset>
+			<legend>Shelter Search</legend>
+			<div class="col-12 d-flex flex-wrap justify-content-around controlgroup" id="pet-type-choice">
+				<div class="p-2 m-1 form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="typedog">
+					<label class="form-check-label" for="typedog">
+						Search for Dogs
+					</label>
+				</div>
+				<div class="p-2 m-1 form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="typecat">
+					<label class="form-check-label" for="typecat">
+						Search for Cats
+					</label>
+				</div>
+				<div class="p-2 m-1 form-check">
+					<input class="form-check-input" type="radio" name="flexRadioDefault" id="typeother" checked>
+					<label class="form-check-label" for="typeother">
+						Search all Animal Types
+					</label>
+				</div>
+
+				<div id="valueNum">
+					<label class="form-label" for="valueNum">
+						How many results would you like?
+					</label>
+					<select id="limitCheck">
+						<option>5</option>
+						<option>10</option>
+						<option>25</option>
+						<option>50</option>
+						<option>100</option>
+					</select>
+				</div>
+
+				<div class="d-grid col-12 p-2 mx-auto">
+					<button class="button" id="searchbutton" type="button">Search</button>
+				</div>
+
+			</div>
+		</fieldset>
+	</div>
+</section>
+
+<section class="container row d-flex flex-wrap">	
+	<!-- results and details -->
+		<div id="searchresultscontainer" class="col-12 p-2 m-1">
+			<div class="col-12" id="searchheader">
+				<h3>Search Results</h3>
+			</div>
+			<div id="searchresults" style="overflow:auto;">
+			{{#each petData as |results|}}
+			{{> searchresults-details}}
+			{{/each}}
+			</div>
+		</div>
+	</section>
+
+	<script src="/js/results.js"></script>

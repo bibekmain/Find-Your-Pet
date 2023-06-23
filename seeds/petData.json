@@ -1,0 +1,74 @@
+[
+    {
+		"photo": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
+		"type": "Dog",
+		"breed": "TBD",
+		"name": "Oscar",
+		"gender": "Male",
+		"age": 4,
+		"status": "adoptable",
+		"published_at": "1-1-2022",
+		"description": "very good",
+		"contact": "email@petsrule.com"
+	},
+    {
+		"photo": "https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
+		"type": "Dog",
+		"breed": "TBD",
+		"name": "Ralu",
+		"gender": "Female",
+		"age": 2,
+		"status": "adoptable",
+		"published_at": "1-1-2022",
+		"description": "very good",
+		"contact": "email@petsrule.com"
+	},
+    {
+		"photo": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+		"type": "Dog",
+		"breed": "TBD",
+		"name": "Peri",
+		"gender": "Female",
+		"age": 5,
+		"status": "adoptable",
+		"published_at": "1-1-2022",
+		"description": "very good",
+		"contact": "email@petsrule.com"
+	},
+    {
+		"photo": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+		"type": "Dog",
+		"breed": "TBD",
+		"name": "Fattymagu",
+		"gender": "Male",
+		"age": 8,
+		"status": "adopted",
+		"published_at": "1-1-2022",
+		"description": "very good",
+		"contact": "email@petsrule.com"
+	},
+    {
+		"photo": "https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1320&q=80",
+		"type": "Cat",
+		"breed": "TBD",
+		"name": "Max",
+		"gender": "Male",
+		"age": 3,
+		"status": "adoptable",
+		"published_at": "1-1-2022",
+		"description": "purrrrre evil",
+		"contact": "email@petsrule.com"
+	},
+    {
+		"photo": "https://images.unsplash.com/photo-1506076177893-89d54794ef41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80",
+		"type": "Goat",
+		"breed": "TBD",
+		"name": "Florian",
+		"gender": "Male",
+		"age": 6,
+		"status": "adoptable",
+		"published_at": "1-1-2022",
+		"description": "G.O.A.T.",
+		"contact": "email@petsrule.com"
+	}
+]
