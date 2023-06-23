@@ -1,0 +1,24 @@
+<div class="card mb-3">
+	<div class="row g-0">
+		<div class="col-md-4">
+			<div class="savedpetimageholder">
+				<img src={{photo}} class="img-fluid" alt="{{name}}" />
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="card-body">
+				<button class="details_button unsaveBtn" id="{{id}}"><i class="fa-solid fa-heart"></i></button>
+				<h5 class="card-title">{{name}}</h5>
+				<ul class="card-text" style="list-style: none;">
+					<li>{{gender}}</li>
+					<li>{{breed}}</li>
+					<li>{{size}}</li>
+					<li>{{age}}</li>
+				</ul>
+				<p class="card-text"><small class="text-muted">{{description}}</small></p>
+				<p class="card-text"><small class="text-muted">{{contact}}</small></p>
+				<p class="card-text">Posted on: <small class="text-muted">{{published_at}}</small></p>
+			</div>
+		</div>
+	</div>
+</div>

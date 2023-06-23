@@ -1,0 +1,12 @@
+	<div id="savedpetscontainer" class="col-12 p-2 m-1">
+		<div class="col-12" id="savedpetsheader">
+			<h3>Your Saved Pets</h3>
+		</div>
+		<div id="savedpetslist" style="overflow:auto;">
+			{{#each pet as |savedCard|}}
+			{{> savedpetcards-details}}
+			{{/each}}
+		</div>
+	</div>
+
+<script src="/js/delete.js"></script>
