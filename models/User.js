@@ -35,6 +35,9 @@ User.init(
 				len: [8],
 			},
 		},
+		// savedPets: {
+		// 	type: DataTypes.TEXT,
+		// }
 	},
 	{
 		hooks: {
