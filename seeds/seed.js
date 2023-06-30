@@ -1,12 +1,11 @@
 const sequelize = require('../config/connection');
-const { SavedPets } = require('../models');
+var models = require('../models');
 
 const petData = require('./petData.json');
 
 const seedDatabase = async () => {
-    await sequelize.sync({ force: true });
-    
-    await SavedPets.bulkCreate(petData);
+    await sequelize.sync({ force: true });    
+    await models.Pets.bulkCreate(petData);
 };
 
 seedDatabase();
