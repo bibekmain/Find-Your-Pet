@@ -42,7 +42,7 @@
 			class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-start justify-content-lg-center py-3 mb-4 border-bottom"
 		>
 			<a href="/" class="align-items-center col-12 col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
-				<img id="logo" role="img" src="/images/" alt="Find Pet Logo" />
+				<img id="logo" role="img" src="/images/favicon.png" alt="Find Pet Logo" />
 			</a>
 
 			<ul class="nav d-flex col-12 col-md-8 col-lg-4 mb-2 justify-content-center justify-content-md-start mb-md-0">
@@ -103,6 +103,8 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
+		{{#if loggedIn}}
 		<script src="/js/logout.js"></script>
+		{{/if}}
 	</body>
 </html>
