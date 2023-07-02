@@ -118,12 +118,12 @@ header .button {
 /* controls the appearance of the "see details" button in the landingpage.handlebars file */
 .details_button {
 	display: inline-block;
-	color: var(--color5);
+	color:var(--color2);
 	text-align: center;
 	text-decoration: none;
 	vertical-align: middle;
 	user-select: unset;
-	background-color: var(--color2);
+	background-color:var(--color2);
 
 	padding: 0.5em 0.75em;
 	font-weight: bold;
@@ -135,6 +135,7 @@ header .button {
 	filter: brightness(80%);
 	text-decoration: none;
 	color: var(--color5);
+
 }
 
 .savedpetimageholder {
@@ -164,7 +165,7 @@ header .button {
 	position: relative;
 }
 #details_button {
-	color: var(--color5) !important;
+	background-color: #0005; 
 }
 #details_button:hover {
 	filter: brightness(85%);
@@ -177,7 +178,9 @@ header .button {
 	padding: 2%;
 	border-radius: 16px;
 }
-
+#textseedetails{
+	color:antiquewhite;
+}
 #logo {
 	width:10vh;
 	height: 10vh;
@@ -204,13 +207,85 @@ header .button {
 #footer {
 	position: fixed;
 	padding: 10px 10px 0px 10px;
+	margin-bottom: 10px;
             bottom: 0;
             width: 100%;
             /* Height of the footer*/
-            height: 40px;
+            height: 60px;
 			opacity:1;
-           /* background-color: #0005;; */
+			color:antiquewhite;
+            /* background-color: #0005; */
 }
+/* .social .fbtn {
+    width: 50px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    /* float: left; */
+/* }
+.social .fa {
+    padding: 15px 0px
+}
+.facebook {
+    background-color: #3b5998;
+}
+.gplus {
+    background-color: #dd4b39;
+}
+.twitter {
+    background-color: #55acee;
+}
+.stumbleupon {
+    background-color: #eb4924;
+}
+.pinterest {
+    background-color: #cc2127;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+.buffer {
+    background-color: #323b43;
+}
+.share-button.sharer {
+    height: 20px;
+    padding: 100px;
+}
+.share-button.sharer .social.active.top {
+    transform: scale(1) translateY(-10px);
+}
+.share-button.sharer .social.active {
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    visibility: visible;
+}
+/* .share-button.sharer .social.networks-5 {} .share-button.sharer .social.top {
+    margin-top: -80px;
+    transform-origin: 0 0 0;
+} */
+/* .share-button.sharer .social {
+    margin-left: -65px;
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+    visibility: hidden;
+}  */
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+  
+        .dropdown {
+            margin-left: 40rem;
+            margin-right: 40rem;
+  
+        }
+  
+        .name {
+            text-align: center;
+            color: green;
+        }
+  
 @media only screen and (min-width: 1200px) {
 	.savedpetimageholder {
 		margin-left: 1rem;

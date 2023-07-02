@@ -8,3 +8,5 @@ Pets.belongsToMany(User, {through: 'user_saved'});
 
 console.log(typeof Pets);
 module.exports = { User, Pets, SearchedPets };
+
+
