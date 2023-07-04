@@ -35,30 +35,36 @@
 
 		<title>Find Your Next Pet - Home</title>
 		<link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+		<style type='text/css'>body, a:hover {cursor: url(http://www.zingerbugimages.com/cursors/puppy1tan.ani), url(http://www.zingerbug.com/cursors/cursors/puppy1tan.gif), progress !important;}</style>
 	</head>
 	{{! TODO: adjust all styles to be mobile first design }}
-	<body class="container col-12 col-md-10 col-xxl-8 px-4 py-5">
-		<header
-			class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-start justify-content-lg-center py-3 mb-4 border-bottom"
+	<body id="bodye" class="container col-12 col-md-10 col-xxl-8 px-4 py-5">
+		<!-- Assign ID to body element -->
+
+		<header id="header-e"
+			class="row d-flex  align-items-left justify-content-center justify-content-md-start justify-content-lg-left py-2 mb-2 "
 		>
-			<a href="/" class="align-items-center col-12 col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
-				<img id="logo" role="img" src="/images/favicon.png" alt="Find Pet Logo" />
+			<a href="/" class="align-items-center col-8 col-md-2 mb-2 mb-md-0 text-dark text-decoration-none float-left">
+				<img id="logo" role="img" src="/images/pet-shop-logo-design-template-modern-animal-icon-label-for-store-veterinary-clinic-hospital-shelter-business-services-flat-illustration-background-with-dog-cat-and-horse-free-vector.jpg" alt="Find Pet Logo" />
+			<h2 id ="logoname" class=" d-flex flex-nowrap">FIND YOUR PET BESTFRIEND</h2>
 			</a>
 
-			<ul class="nav d-flex col-12 col-md-8 col-lg-4 mb-2 justify-content-center justify-content-md-start mb-md-0">
-				<li class="col-12 col-md-4"><a href="/" class="navigationbutton">Home</a></li>
+			<ul class=" d-flex flex-nowrap fixed-top pull-right col-8 col-md-8 col-lg-4 mb-2  justify-content-md-start mb-md-0" style="list-style:none">
+				<li class="col-12 col-md-4" ><a href="/" class="navigationbutton">Home</a></li>
 				<li class="col-12 col-md-4"><a href="/api/search" class="navigationbutton">Pet Search</a></li>
 				<li class="col-12 col-md-4"><a href="/api/pets" class="navigationbutton">Saved Pets</a></li>
-			</ul>
-
-			<div class="d-flex flex-wrap col-12 col-lg-4 text-end align-items-center justify-content-center">
+        </ul>
+			{{!-- <div class=" col-12  fixed-top text-right"> --}}
+				<div class="d-flex flex-wrap col-12 col-lg-4 text-end align-items-center justify-content-center">
 				{{#if loggedIn}}
 					<button id="logout" class="col-12 col-md-3 col-lg-3 mb-1 mx-md-1 mb-md-0 button">Logout</button>
+		
 				{{else}}
 					<a href="/login" class="col-12 col-md-3 col-lg-3 mb-1 mx-md-1 mb-md-0 button">Login</a>
-					<a href="/login" class="col-12 col-md-3 col-lg-3 mb-1 mx-md-1 mb-md-0 button">Register</a>
+					<a href="/login" class=" col-12 col-md-3 col-lg-3 mb-1 mx-md-1 mb-md-0 button">Register</a>
 				{{/if}}
 			</div>
+
 		</header>
 		<nav>
 
@@ -68,10 +74,57 @@
 			{{{body}}}
 
 		</main>
-		<footer class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-			<h4>Made by team G10</h4>
-			<a href="https://github.com/bibekmain/Find-Your-Pet" target="_blank" rel="noreferrer noopener"><h4>Check this site's Repo here:</h4></a>
-		</footer>
+		<footer id ="footer" class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py data-toggle=collapse">
+       <h4>Made by team G10 </h4>
+			 <ul class="dropdown-menu" 
+        aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">
+                 About Us
+                </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+                FAQ
+                </a>
+            </li>
+            <li><a class="dropdown-item" href="#">
+                Volunteer
+               </a>
+           </li>
+        </ul>
+   </div>
+			<a class ="fab fa-github" href="https://github.com/bibekmain/Find-Your-Pet" style="color:antiquewhite" ></a>
+	
+	    <!-- Facebook -->
+<a class ="fab fa-facebook" href="https://www.facebook.com" style="color:antiquewhite" ></a>
+	
+
+<!-- Twitter -->
+<a class ="fab fa-twitter" href="https://www.twitter.com" style="color:antiquewhite" ></a>
+	
+
+<!-- Google -->
+<i class="fab fa-google"></i>
+
+<!-- Instagram -->
+<i class="fab fa-instagram"></i>
+
+<!-- Linkedin -->
+<i class="fab fa-linkedin-in"></i>
+
+<!-- Pinterest -->
+<a class ="fab fa-pinterest" href="https://www.pinterest.com/mhagerty22/adorable-dogs/" style="color:antiquewhite" ></a>
+	
+<!-- Stack overflow -->
+<i class="fab fa-stack-overflow"></i>
+
+<!-- Youtube -->
+<a class ="fab fa-youtube" href="https://youtube.com" style="color:antiquewhite" ></a>
+	
+
+<!-- Slack -->
+<i class="fab fa-slack-hash"></i>
+
+ 		</footer>
 
 		<!-- Jquery Script -->
 		<script
@@ -103,8 +156,19 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
-		{{#if loggedIn}}
-		<script src="/js/logout.js"></script>
-		{{/if}}
+		<script>
+			  $(document).ready(function () {
+            $('.dropdown').hover(function () {
+                $(this).addClass('show');
+                $(this).find('.dropdown-menu').addClass('show');
+            }, function () {
+                $(this).removeClass('show');
+                $(this).find('.dropdown-menu').removeClass('show');
+            });
+        });
+		</script>
+		<script src="/js/logout.js">	</script>
+		{{!-- {{/if}} --}}
+	
 	</body>
 </html>
