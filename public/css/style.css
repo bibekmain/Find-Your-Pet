@@ -45,13 +45,6 @@ header {
 	/* background-color: var(--color1); */
 	
 }
-#logoname{
-	font-style: italic;
-	color: antiquewhite;
-}
-/* footer {
-	background-color: var(--color1);
-} */
 
 header .button {
 	background-color:  #0005;
@@ -65,7 +58,7 @@ header .button {
 	text-decoration: none;
 	vertical-align: middle;
 	user-select: unset;
-	background-color:var(--color2);
+	background-color:#0005;
 	padding: 0.5em 0.75em;
 	font-weight: bold;
 	border:var(--color2) 1px;
@@ -77,7 +70,7 @@ header .button {
 	background-color: var(--color2);
 	filter: brightness(85%);
 	text-decoration: none;
-	color: var(--color5);
+	/* color: var(--color5); */
 }
 /* navigation links in header */
 .navigationbutton {
@@ -129,11 +122,17 @@ header .button {
 #newestpetimg{
 	visibility: hidden;
 }
-/*.hero img {
-	max-width: 30vw;
-}*/
+#heroname{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image: linear-gradient(to left,#b3ff00,#b9cc66,#9eff66, #f6ffcc, yellow);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
 /* controls the appearance of the "see details" button in the landingpage.handlebars file */
-.details_button {
+/* .details_button {
 	display: inline-block;
 	color:whitesmoke;
 	text-align: center;
@@ -146,13 +145,8 @@ header .button {
 	border: #0005 1px;
 	border-radius: 0.25em;
 	
-}
-.details_button:hover {
-	background-color: var(--color2);
-	filter: brightness(85%);
-	text-decoration: none;
-	
-}
+} */
+
 
 .savedpetimageholder {
 	position: relative;
@@ -184,13 +178,6 @@ header .button {
 
 .form-check-input {
 	position: relative;
-}
-#details_button {
-	background-color: #0005; 
-}
-#details_button:hover {
-	filter: brightness(85%);
-	color: var(--color5);
 }
 
 #pet-type-choice {
