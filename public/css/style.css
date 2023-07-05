@@ -13,10 +13,10 @@ body {
 	max-width: 100vw;
 	max-height: 100vh;
 	color: var(--color4);
-	background-image: url(/images/dog.jpg);
-	background-position: center;
-	background-size: cover;
-	animation:change 40s infinite ease-in;
+	background-image: url(/images/dog0.jpg);
+	background-size:cover;
+	background-position:center center;
+	animation:change 40s infinite ease;
 	
 	
 }
@@ -80,6 +80,7 @@ header .button {
 	vertical-align: middle;
 	user-select: unset;
 	background-color: transparent;
+	flex-wrap: nowrap;
 	padding:5px;
 	font-weight: bold;
 	float: left;
