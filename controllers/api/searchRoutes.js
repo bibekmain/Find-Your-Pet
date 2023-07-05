@@ -1,3 +1,4 @@
+require("dotenv").config();
 const router = require("express").Router();
 const petfinder = require("@petfinder/petfinder-js");
 const sequelize = require("../../config/connection");
@@ -42,6 +43,7 @@ router.post("/", async (req, res) => {
 						status: pet.status,
 						published_at: pet.published_at,
 						contact: pet.contact.email,
+						url: pet.url,
 					})
 				);
 			})
@@ -51,6 +53,8 @@ router.post("/", async (req, res) => {
 
 	let type = req.body.keyCheck;
 	let limit = req.body.limitCheck;
+	console.log("Passed Type:", type);
+	console.log("Passed Limit:", limit);
 	GetPetsFromAPI(type, limit);
 	console.log("DB seeded with search results");
 });

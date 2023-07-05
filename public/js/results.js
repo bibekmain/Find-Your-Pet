@@ -1,6 +1,7 @@
 const searchButtonHandler = async function (event) {
 	event.preventDefault();
 	const keyCheck = await document.querySelectorAll(".form-check-input");
+	const delaySeconds = 500;
 	let keyCheckedValue = "";
 
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
@@ -12,10 +13,10 @@ const searchButtonHandler = async function (event) {
 		body: JSON.stringify({
 			keyCheck: keyCheckedValue,
 			limitCheck: limitCheck.value,
-			// typeValue: type,
 		}),
 		headers: { "Content-Type": "application/json" },
-	}).then(document.location.reload());
+	});
+	delay(1000).then(() => document.location.reload());//1s delay
 };
 
 const saveBtnHandler = async function (event) {
@@ -33,6 +34,11 @@ const saveBtnHandler = async function (event) {
 	}
 	//look ay btn id
 };
+
+function delay(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
+}
+
 document
 	.querySelector("#searchresultscontainer")
 	// event delegation class favoritepet

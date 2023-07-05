@@ -233,6 +233,11 @@ color: transparent;
             /* background-color: #0005; */
 			
 }
+
+.mb-3{
+	padding: 20px;
+	border-radius: 20px;
+}
 /* .social .fbtn {
     width: 50px;
     display: inline-block;

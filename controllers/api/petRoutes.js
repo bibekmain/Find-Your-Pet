@@ -1,3 +1,4 @@
+require("dotenv").config();
 const router = require("express").Router();
 const req = require("express/lib/request");
 const { Pets, User } = require("../../models");
@@ -50,6 +51,7 @@ router.post("/", withAuth, async (req, res) => {
 				status: req.body.status,
 				published_at: req.body.published_at,
 				contact: req.body.contact,
+				url: req.body.url,
 			});
 			const userSavesPet = await userData.addPets(savePet);
 			res.status(200).json(userSavesPet);
