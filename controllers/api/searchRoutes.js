@@ -43,7 +43,6 @@ router.post("/", async (req, res) => {
 						status: pet.status,
 						published_at: pet.published_at,
 						contact: pet.contact.email,
-						url: pet.url,
 					})
 				);
 			})

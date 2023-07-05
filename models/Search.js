@@ -47,9 +47,6 @@ SearchedPets.init(
 		contact: {
 			type: DataTypes.STRING,
 		},
-		url: {
-			type: DataTypes.STRING,
-		}
 	},
 	{
 		sequelize,
