@@ -1,10 +1,11 @@
-<div class="container col-xxl-8 px-4 py-5 hero"></div>
-	<div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-3">
+<div class="container col-xxl-8 justify-content-md-start my-1 mb-md-0 px-1 py-4 hero" id="heroname">
+		<h1>FIND YOUR PET BESTFRIEND </h1>
+</div>
+	 <div class="row flex-lg-row-reverse justify-content-center align-items-center g-7 py-3"> 
 		<div class="col-10 col-sm-8 col-lg-6 justify-content-center">
-			<!--<img id="newestpetimg" src="/images/depositphotos_371964012-stock-photo-happy-mixed-breed-dog-posing.jpg" class="d-block mx-lg-auto img-fluid" alt="dog awaits adoption" width="300" 
-				height="500" loading="lazy">-->
-		</div>
-		
+			<img id="newestpetimg" src="/images/depositphotos_371964012-stock-photo-happy-mixed-breed-dog-posing.jpg" class="d-block mx-lg-auto img-fluid" visibilty="hidden" width="400" 
+				height="500" loading="lazy">
+		</div> 
 		<div class="col-lg-6">
 			<h1 id="textseedetails" class="display-5 fw-bold lh-1 mb-3 ">Take a look at who's just come up for adoption!</h1>
 			<ul class="herolist" style="list-style: none;">
@@ -13,9 +14,12 @@
 				<li>{{location}}</li>
 			</ul>
 			
-			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
-				<button type="button" class="button" id="details_button">see details...</button>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-start ">
+				<a href="/api/search">
+				<button type="button" class="button" id="details_button" >see details...</button>
+				</a>
 			</div>
+			
 		</div>
 	</div>
 </div>
