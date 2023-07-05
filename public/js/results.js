@@ -16,15 +16,21 @@ const searchButtonHandler = async function (event) {
 		}),
 		headers: { "Content-Type": "application/json" },
 	});
-	delay(1000).then(() => document.location.reload());//1s delay
+	delay(1500).then(() => document.location.reload());//1.5s delay
 };
 
 const saveBtnHandler = async function (event) {
 	event.preventDefault();
-	if (event.target.matches(".favoritepet")) {
+
+	let revisedTarget = event.target;
+	if (event.target.matches(".fa-heart")){
+		revisedTarget = event.target.parentNode;
+	}
+
+	if (revisedTarget.matches(".favoritepet")) {
 		const response = await fetch("/api/pets", {
 			method: "POST",
-			body: JSON.stringify(event.target.dataset),
+			body: JSON.stringify(revisedTarget.dataset),
 			headers: { "Content-Type": "application/json" },
 		});
 		if (response.ok) {

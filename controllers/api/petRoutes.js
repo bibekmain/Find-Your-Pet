@@ -1,6 +1,6 @@
 require("dotenv").config();
 const router = require("express").Router();
-const req = require("express/lib/request");
+// const req = require("express/lib/request");
 const { Pets, User } = require("../../models");
 const withAuth = require("../../utils/auth");
 
@@ -65,12 +65,14 @@ router.post("/", withAuth, async (req, res) => {
 });
 
 // removes a pet from the saved pets list
-router.delete("/", async (req, res) => {
+router.delete("/:petId", async (req, res) => {
 	console.log("I'm deleting an entry from the Pets DB");
 	try {
 		const savedPetCard = await Pets.destroy({
 			where: {
-				id: req.params.id,
+				id: {
+					[Sequelize.or]: [req.params.petId]
+				}
 			},
 		});
 
@@ -85,3 +87,4 @@ router.delete("/", async (req, res) => {
 });
 
 module.exports = router;
+

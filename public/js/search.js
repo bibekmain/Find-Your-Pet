@@ -16,7 +16,7 @@ const searchButtonHandler = async function (event) {
 		}),
 		headers: { "Content-Type": "application/json" },
 	})
-	delay(1000).then(() => document.location.replace("/api/search/results"));//1s delay
+	delay(1500).then(() => document.location.replace("/api/search/results"));//1.5s delay
 };
 
 function delay(time) {
