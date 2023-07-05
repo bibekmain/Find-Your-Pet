@@ -21,12 +21,12 @@ const searchButtonHandler = async function (event) {
 
 const saveBtnHandler = async function (event) {
 	event.preventDefault();
-	console.log(event);
-	let revisedTarget = event.target;
 
+	let revisedTarget = event.target;
 	if (event.target.matches(".fa-heart")){
 		revisedTarget = event.target.parentNode;
 	}
+
 	if (revisedTarget.matches(".favoritepet")) {
 		const response = await fetch("/api/pets", {
 			method: "POST",

@@ -1,8 +1,13 @@
 const delButtonHandler = async (event) => {
     event.preventDefault();
+    
+    let revisedTarget = event.target;
+    if (event.target.matches(".fa-heart")){
+		revisedTarget = event.target.parentNode;
+	}
 
-    if (event.target.matches(".unsaveBtn")) {
-        let btnElId = event.target.id;
+    if (revisedTarget.matches(".unsaveBtn")) {
+        let btnElId = revisedTarget.id;
         console.log("Trying to delete  ", btnElId)
 
         const response = await fetch(`/api/pets/${btnElId}`, {//TODO: delete pet does not work
