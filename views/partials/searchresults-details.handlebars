@@ -2,7 +2,7 @@
 	<div class="row g-0">
 		<div class="col-md-4">
 			<div class="savedpetimageholder">
-				<img src="{{photo}}" href="/pets/:id" class="img-fluid" alt="{{name}}" />
+				<img src="{{photo}}" href="/pets/:id" class="img-fluid" alt="{{name}}"/>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -10,7 +10,7 @@
 				<button
 					class="details_button favoritepet"
 					data-id="{{id}}"
-					id=""{{id}}""
+					id="{{id}}"
 					data-type="{{type}}"
 					data-pf_id="{{pf_id}}"
 					data-breeds="{{breeds}}"
@@ -23,6 +23,7 @@
 					data-status="{{status}}"
 					data-published_at="{{published_at}}"
 					data-contact="{{contact}}"
+					data-url="{{url}}"
 				><i class="fa-regular fa-heart"></i></button>
 				<h5 class="card-title">{{name}}</h5>
 				<ul class="card-text" style="list-style: none;">
@@ -33,7 +34,7 @@
 				</ul>
 				<p class="card-text"><small class="text-muted">{{description}}</small></p>
 				<p class="card-text"><small class="text-muted"><a href="mailto: {{contact}}" target="_blank">{{contact}}</a></small></p>
-				<p class="card-text">Posted on: <small class="text-muted">{{published_at}}</small></p>
+				<p class="card-text">Posted on: <small class="text-muted">{{published_at}} At <a href="{{url}}">PetFinder</a></small></p>
 			</div>
 		</div>
 	</div>

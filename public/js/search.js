@@ -1,22 +1,26 @@
 const searchButtonHandler = async function (event) {
 	event.preventDefault();
 	const keyCheck = await document.querySelectorAll(".form-check-input");
+	const delaySeconds = 500;
 	let keyCheckedValue = "";
 
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
 
 	const limitCheck = await document.querySelector("#limitCheck");
 
-	const response = await fetch("/api/search", {//there is an issue with loading the page. It is not waiting for the data to come in before replacing document.
+	const response = fetch("/api/search", {
 		method: "POST",
 		body: JSON.stringify({
 			keyCheck: keyCheckedValue,
 			limitCheck: limitCheck.value,
-			// typeValue: keyCheckedValue,
 		}),
 		headers: { "Content-Type": "application/json" },
 	})
-	.then(document.location.replace("/api/search/results"));
+	delay(1000).then(() => document.location.replace("/api/search/results"));//1s delay
 };
+
+function delay(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
+}
 
 document.querySelector("#searchbutton").addEventListener("click", searchButtonHandler);
