@@ -2,14 +2,15 @@
 	<div class="row g-0">
 		<div class="col-md-4">
 			<div class="savedpetimageholder">
-				<img src={{photo}} href="/pets/:id" class="img-fluid" alt="{{name}}" />
+				<img src="{{photo}}" href="/pets/:id" class="img-fluid" alt="{{name}}" />
 			</div>
 		</div>
 		<div class="col-md-8">
 			<div class="card-body">
 				<button
 					class="details_button favoritepet"
-					id="{{id}}"
+					data-id="{{id}}"
+					id=""{{id}}""
 					data-type="{{type}}"
 					data-pf_id="{{pf_id}}"
 					data-breeds="{{breeds}}"
@@ -25,13 +26,13 @@
 				><i class="fa-regular fa-heart"></i></button>
 				<h5 class="card-title">{{name}}</h5>
 				<ul class="card-text" style="list-style: none;">
-					<li>{{gender}}</li>
-					<li>{{breed}}</li>
-					<li>{{size}}</li>
-					<li>{{age}}</li>
+					<li>Gender: {{gender}}</li>
+					<li>Breed: {{breeds}}</li>
+					<li>Size: {{size}}</li>
+					<li>Age: {{age}}</li>
 				</ul>
 				<p class="card-text"><small class="text-muted">{{description}}</small></p>
-				<p class="card-text"><small class="text-muted">{{contact}}</small></p>
+				<p class="card-text"><small class="text-muted"><a href="mailto: {{contact}}" target="_blank">{{contact}}</a></small></p>
 				<p class="card-text">Posted on: <small class="text-muted">{{published_at}}</small></p>
 			</div>
 		</div>

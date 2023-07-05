@@ -7,15 +7,16 @@ const searchButtonHandler = async function (event) {
 
 	const limitCheck = await document.querySelector("#limitCheck");
 
-	const response = fetch("/api/search", {
+	const response = await fetch("/api/search", {//there is an issue with loading the page. It is not waiting for the data to come in before replacing document.
 		method: "POST",
 		body: JSON.stringify({
 			keyCheck: keyCheckedValue,
 			limitCheck: limitCheck.value,
-			// typeValue: type,
+			// typeValue: keyCheckedValue,
 		}),
 		headers: { "Content-Type": "application/json" },
-	}).then(document.location.replace("/api/search/results"));
+	})
+	.then(document.location.replace("/api/search/results"));
 };
 
 document.querySelector("#searchbutton").addEventListener("click", searchButtonHandler);

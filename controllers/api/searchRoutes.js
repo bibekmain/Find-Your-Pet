@@ -51,6 +51,8 @@ router.post("/", async (req, res) => {
 
 	let type = req.body.keyCheck;
 	let limit = req.body.limitCheck;
+	console.log("Passed Type:", type);
+	console.log("Passed Limit:", limit);
 	GetPetsFromAPI(type, limit);
 	console.log("DB seeded with search results");
 });
