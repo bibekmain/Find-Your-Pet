@@ -5,9 +5,9 @@ const searchButtonHandler = async function (event) {
 	let keyCheckedValue = "";
 
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
-	keyCheckedValue == 100 ? (secondsDelay = 2000) : (secondsDelay = 1250);
+	keyCheckedValue == 100 ? (secondsDelay = 2000) : (secondsDelay = 1500);
 
-	const limitCheck = document.querySelector("#limitCheck");
+	const limitCheck = await document.querySelector("#limitCheck");
 
 	const response = fetch("/api/search", {
 		method: "POST",
