@@ -1,6 +1,7 @@
 const delButtonHandler = async (event) => {
     event.preventDefault();
     
+    //redirects the target to element with dataset
     let revisedTarget = event.target;
     if (event.target.matches(".fa-heart")){
 		revisedTarget = event.target.parentNode;
@@ -16,13 +17,11 @@ const delButtonHandler = async (event) => {
 
         if(response.ok) {
             console.log("Pet Deleted");
-            document.location.replace('/pets');
+            document.location.replace('/api/pets');
         } else {
             alert('Failed to unsave pet');
         }
     }
 };
 
-document
-    .querySelector('#savedpetscontainer')
-    .addEventListener('click', delButtonHandler);
+document.querySelector('#savedpetscontainer').addEventListener('click', delButtonHandler);

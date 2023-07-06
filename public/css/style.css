@@ -6,6 +6,10 @@
 	--color5: #664147;
 	--pagefont: "Lato", sans-serif;
 }
+legend{
+	color: white;
+	opacity: 65%;
+}
 a:focus {
 	background-color:none;
 }
@@ -194,6 +198,7 @@ color: transparent;
 	width:10vh;
 	height: 10vh;
     display: inline-block;
+	border-radius: 50px;
 }
 
 #petdetailcontainer {
@@ -238,6 +243,7 @@ color: transparent;
 	padding: 20px;
 	border-radius: 20px;
 }
+
 /* .social .fbtn {
     width: 50px;
     display: inline-block;

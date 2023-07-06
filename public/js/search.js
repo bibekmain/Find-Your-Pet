@@ -6,7 +6,7 @@ const searchButtonHandler = async function (event) {
 
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
 
-	const limitCheck = await document.querySelector("#limitCheck");
+	const limitCheck = document.querySelector("#limitCheck");
 
 	const response = fetch("/api/search", {
 		method: "POST",
@@ -16,9 +16,11 @@ const searchButtonHandler = async function (event) {
 		}),
 		headers: { "Content-Type": "application/json" },
 	})
+	
 	delay(1500).then(() => document.location.replace("/api/search/results"));//1.5s delay
 };
 
+//function that sets a time delay
 function delay(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
 }
