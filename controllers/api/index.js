@@ -1,8 +1,8 @@
 const router = require("express").Router();
 
-const petRoutes = require("./petRoutes");
-const userRoutes = require("./userRoutes");
-const searchRoutes = require("./searchRoutes");
+const petRoutes = require("./petRoutes");// /pets
+const userRoutes = require("./userRoutes");// /user
+const searchRoutes = require("./searchRoutes");// /search
 
 router.use("/user", userRoutes);
 router.use("/pets", petRoutes);

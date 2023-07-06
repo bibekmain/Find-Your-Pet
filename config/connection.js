@@ -3,9 +3,9 @@ require("dotenv").config();
 
 let sequelize;
 
-if (process.env.JAWSDB_URL) {
+if (process.env.JAWSDB_URL) {//if connection is through JAWSDB i.e. Heroku
   sequelize = new Sequelize(process.env.JAWSDB_URL);
-} else {
+} else {//if connection is through a different (local) port
   sequelize = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
