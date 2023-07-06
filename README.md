@@ -4,16 +4,16 @@
 This website helps the user find and adopt pets from their nearest location by registering an account that can save their preferred pets to adopt. 
 
 ## USAGE 
-when the user enters the website, the user is presented with the homepage that has navigation buttons for pet searches, saved pets, login and register. 
+When the user enters the website, the user is presented with the homepage that has navigation buttons for pet searches, saved pets, login and register:  
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS1.png)
 
-when the user clicks the pet search button, then the user is presented with a form about pet preferences to search.  
+When the user clicks the pet search button, then the user is presented with a form about pet preferences to search:  
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS2.png)
 
-when the user clicks the save pets button, the user is prompted to sign in to an existing account or register a new account. Then it takes the user to their saves pets section.  
+When the user clicks the save pets button, the user is prompted to sign in to an existing account or register a new account. Then it takes the user to their saves pets section:  
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS4.png)
 
-when the user clicks the login or register button, the user is taken to a page where they can either sign in or register a new account.  
+When the user clicks the login or register button, the user is taken to a page where they can either sign in or register a new account:  
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS3.png)
 
 ## TECHNOLOGIES USED
