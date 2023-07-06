@@ -38,9 +38,9 @@ const saveBtnHandler = async function (event) {
 			console.log("PET SAVED***  ", data);
 		}
 	}
-	//look ay btn id
 };
 
+//function that sets a time delay
 function delay(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
 }

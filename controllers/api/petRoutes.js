@@ -70,9 +70,7 @@ router.delete("/:petId", async (req, res) => {
 	try {
 		const savedPetCard = await Pets.destroy({
 			where: {
-				id: {
-					[Sequelize.or]: [req.params.petId]
-				}
+				id: req.params.petId,
 			},
 		});
 
@@ -82,6 +80,7 @@ router.delete("/:petId", async (req, res) => {
 		}
 		res.status(200).json(savedPetCard);
 	} catch (err) {
+		console.log(err);
 		res.status(500).json(err);
 	}
 });

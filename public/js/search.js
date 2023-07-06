@@ -19,6 +19,7 @@ const searchButtonHandler = async function (event) {
 	delay(1500).then(() => document.location.replace("/api/search/results"));//1.5s delay
 };
 
+//function that sets a time delay
 function delay(time) {
 	return new Promise(resolve => setTimeout(resolve, time));
 }

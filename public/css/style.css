@@ -194,6 +194,7 @@ color: transparent;
 	width:10vh;
 	height: 10vh;
     display: inline-block;
+	border-radius: 50px;
 }
 
 #petdetailcontainer {
