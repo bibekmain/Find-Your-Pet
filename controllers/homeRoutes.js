@@ -41,4 +41,13 @@ router.get("/login", (req, res) => {
 	res.render("login");
 });
 
+//get for aboutus
+
+router.get("/aboutus",(req, res) => {
+	res.render("aboutus");
+});
+//get for FAQ
+router.get("/faq",(req, res) => {
+	res.render("faq");
+});
 module.exports = router;
