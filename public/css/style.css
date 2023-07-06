@@ -135,7 +135,19 @@ background-image: linear-gradient(to left,#b3ff00,#b9cc66,#9eff66, #f6ffcc, yell
 background-clip: text;
 color: transparent;
 }
+#about-title{
+	color: antiquewhite;
+}
+#about-p{
+	font-family:'Courier New', Courier, monospace;
+	font-weight:bold;
+	font-size:medium;
 
+}
+
+#faq-title{
+	color: antiquewhite;
+}
 /* controls the appearance of the "see details" button in the landingpage.handlebars file */
 /* .details_button {
 	display: inline-block;
