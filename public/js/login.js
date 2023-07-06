@@ -1,8 +1,6 @@
 const loginFormHandler = async (event) => {
 	event.preventDefault();
 
-	// document.getElementById("#modalSignin").modal("show");
-
 	const email = document.querySelector("#email-login").value.trim();
 	const password = document.querySelector("#password-login").value.trim();
 
@@ -23,8 +21,6 @@ const loginFormHandler = async (event) => {
 
 const signupFormHandler = async (event) => {
 	event.preventDefault();
-
-	// document.getElementById("#modalSignup").modal("show");
 
 	const username = document.querySelector("#username-signup").value.trim();
 	const email = document.querySelector("#email-signup").value.trim();

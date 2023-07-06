@@ -11,7 +11,7 @@ const delButtonHandler = async (event) => {
         let btnElId = revisedTarget.id;
         console.log("Trying to delete  ", btnElId)
 
-        const response = await fetch(`/api/pets/${btnElId}`, {//TODO: delete pet does not work
+        const response = await fetch(`/api/pets/${btnElId}`, {
             method: 'DELETE',
         });
 

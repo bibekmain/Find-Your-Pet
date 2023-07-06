@@ -1,10 +1,13 @@
 const searchButtonHandler = async function (event) {
 	event.preventDefault();
 	const keyCheck = await document.querySelectorAll(".form-check-input");
-	const delaySeconds = 500;
+	let secondsDelay;
 	let keyCheckedValue = "";
 
+	//calculate animal type
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
+	//calculate delay
+	keyCheckedValue == 100 ? (secondsDelay = 2000) : (secondsDelay = 1250);
 
 	const limitCheck = document.querySelector("#limitCheck");
 
@@ -17,7 +20,7 @@ const searchButtonHandler = async function (event) {
 		headers: { "Content-Type": "application/json" },
 	})
 	
-	delay(1500).then(() => document.location.replace("/api/search/results"));//1.5s delay
+	delay(secondsDelay).then(() => document.location.replace("/api/search/results"));//1.5s delay
 };
 
 //function that sets a time delay

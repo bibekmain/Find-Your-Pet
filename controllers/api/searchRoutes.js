@@ -1,10 +1,10 @@
-require("dotenv").config();
+// /api/search
+
 const router = require("express").Router();
 const petfinder = require("@petfinder/petfinder-js");
-const sequelize = require("../../config/connection");
 const { SearchedPets } = require("../../models");
-const withAuth = require("../../utils/auth");
 
+//default search page without results
 router.get("/", async (req, res) => {
 	try {
 		res.render("searchpage", {
@@ -15,6 +15,7 @@ router.get("/", async (req, res) => {
 	}
 });
 
+//post endpoint that uses Pet Finder API and seeds SearchedPets db with pets
 router.post("/", async (req, res) => {
 	function GetPetsFromAPI(type, limit) {
 		const pf = new petfinder.Client({
@@ -53,7 +54,8 @@ router.post("/", async (req, res) => {
 	console.log("DB seeded with search results");
 });
 
-router.get("/results", async (req, res) => {
+//get endpoint that displays the searched pets
+router.get("/results", async (req, res) => {// /api/search/results
 	try {
 		const dbPetData = await SearchedPets.findAll();
 		const petData = dbPetData.map((pd) => pd.get({ plain: true }));
