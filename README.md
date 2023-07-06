@@ -8,7 +8,7 @@ when the user enters the website, the user is presented with the homepage that h
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/2c8ee949dd171e6f132f62b5748f698b0039eeba/Screenshot%202023-07-05%20194229.png)
 
 when the user clicks the pet search button, then the user is presented with a form about pet preferences to search. 
-![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/2c8ee949dd171e6f132f62b5748f698b0039eeba/Screenshot%202023-07-05%20194151.png)
+![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/f4028f3b721cf03a52fea5b35429673b7e298cd0/Screenshot%202023-07-05%20194117.png)
 
 when the user clicks the save pets button, the user is prompted to sign in to an existing account or register a new account. Then it takes the user to their saves pets section. 
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/2c8ee949dd171e6f132f62b5748f698b0039eeba/Screenshot%202023-07-05%20194151.png)
