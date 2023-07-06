@@ -21,15 +21,11 @@ router.post("/", async (req, res) => {
 			apiKey: process.env.API_KEY,
 			secret: process.env.SECRET,
 		});
-		pf.animal
-			.search({
-				type,
-				limit,
-			})
-			.then(function (response) {
+		pf.animal.search({type, limit})
+			.then(async function (response) {
 				const search = response.data.animals;
-				SearchedPets.truncate();
-				search.forEach((pet) =>
+				await SearchedPets.truncate();
+				await search.forEach((pet) =>
 					SearchedPets.create({
 						type: pet.type,
 						pf_id: pet.id,
@@ -46,7 +42,6 @@ router.post("/", async (req, res) => {
 					})
 				);
 			})
-
 			.catch((err) => console.log(err));
 	}
 
