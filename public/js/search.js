@@ -1,10 +1,10 @@
 let lat = '37.8715';
-let lng = '122.2730';
+let lng = '-122.2730';
 
 const searchButtonHandler = async function (event) {
 	event.preventDefault();
 	const keyCheck = await document.querySelectorAll(".form-check-input");
-	let secondsDelay;
+	let secondsDelay = 2;
 	let keyCheckedValue = "";
 
 	//calculate animal type
