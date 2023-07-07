@@ -17,7 +17,7 @@ When the user clicks the login or register button, the user is taken to a page w
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS3.png)
 
 This quick demo shows how the webpage can be used:  
-![alt text]()
+![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/41216c9bce5eeca534b491ec09e1f5a02449465c/public/images/App-Demo.gif)
 
 ## TECHNOLOGIES USED
 This application uses languages such as JavaScript, Handlebars, and CSS.  
