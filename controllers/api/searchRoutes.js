@@ -17,13 +17,12 @@ router.get("/", async (req, res) => {
 
 //post endpoint that uses Pet Finder API and seeds SearchedPets db with pets
 router.post("/", async (req, res) => {
-	const location = 94701;
 	function GetPetsFromAPI(type, limit) {
 		const pf = new petfinder.Client({
 			apiKey: process.env.API_KEY,
 			secret: process.env.SECRET,
 		});
-		pf.animal.search({type, limit, location})
+		pf.animal.search({type, limit})
 			.then(async function (response) {
 				const search = response.data.animals;
 				await SearchedPets.truncate();
