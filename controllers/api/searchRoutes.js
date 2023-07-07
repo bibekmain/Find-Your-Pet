@@ -19,11 +19,14 @@ router.get("/", async (req, res) => {
 
 //post endpoint that uses Pet Finder API and seeds SearchedPets db with pets
 router.post("/", async (req, res) => {
+	console.log(req.body.lat);
+	console.log(req.body.lng);
 	const tmpLocation = {
 		latitude: req.body.lat,
 		longitude: req.body.lng,
 	};
 	result = await geo2zip.geo2zip(tmpLocation);
+	console.log(result);
 	const zipcode = result;
 	function GetPetsFromAPI(type, limit,zipcode) {
 		const pf = new petfinder.Client({

@@ -1,24 +1,23 @@
-let lat = '37.8715';
-let lng = '122.2730';
+let latitude = '37.8715';
+let longitude = '-122.2730';
 
 const searchButtonHandler = async function (event) {
 	event.preventDefault();
 	const keyCheck = await document.querySelectorAll(".form-check-input");
-	let secondsDelay;
+	let secondsDelay = 2;
 	let keyCheckedValue = "";
 
 	keyCheck[0].checked == true ? (keyCheckedValue = "dog") : keyCheck[1].checked == true ? (keyCheckedValue = "cat") : (keyCheckedValue = "");
 	keyCheckedValue == 100 ? (secondsDelay = 2000) : (secondsDelay = 1500);
 
 	const limitCheck = await document.querySelector("#limitCheck");
-
 	const response = fetch("/api/search", {
 		method: "POST",
 		body: JSON.stringify({
 			keyCheck: keyCheckedValue,
 			limitCheck: limitCheck.value,
-			lat: lat,
-			lng: lng,
+			lat: latitude,
+			lng: longitude,
 		}),
 		headers: { "Content-Type": "application/json" },
 	})
@@ -60,8 +59,8 @@ if ("geolocation" in navigator) {
 	  // Success callback function
 	  (position) => {
 		// Get the user's latitude and longitude coordinates
-		lat = position.coords.latitude;
-		lng = position.coords.longitude;
+		latitude = position.coords.latitude;
+		longitude = position.coords.longitude;
   
 		// Do something with the location data, e.g. display on a map
 		console.log(`Latitude: ${lat}, longitude: ${lng}`);
