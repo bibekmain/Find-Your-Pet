@@ -32,7 +32,7 @@ This application uses languages such as JavaScript, Handlebars, and CSS.
 <ins>CSS</ins>
 -Bootstrap 
 
-For Server-side we used MySQL server and Horuko to deploy. 
+For Server-side we used MySQL server and Heruko to deploy. 
 
 ## Links
 * Deployed Application: [Find Your Next Pet](https://find-your-pet-f291172b2d8b.herokuapp.com/)
