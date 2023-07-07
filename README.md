@@ -11,7 +11,7 @@ When the user clicks the pet search button, then the user is presented with a fo
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS2.png)
 
 When the user clicks the save pets button, the user is prompted to sign in to an existing account or register a new account. Then it takes the user to their saves pets section:  
-![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS4.png)
+![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/068d131fbd4db103b64b7779325b6c55a1bbccbd/Screenshot%202023-07-06%20193752.png)
 
 When the user clicks the login or register button, the user is taken to a page where they can either sign in or register a new account:  
 ![alt text](https://github.com/bibekmain/Find-Your-Pet/blob/acd9497f527893ce820536018ac4318a9bb42066/public/images/SS3.png)
